@@ -76,7 +76,7 @@ Weights are configurable in the request.
   {"id":"3","title":"Update docs","due_date":null,"estimated_hours":2,"importance":4,"dependencies":[]},
   {"id":"4","title":"Hotfix payment","due_date":"2025-11-20","estimated_hours":1,"importance":10,"dependencies":[]}
 ]
-
+```
 7) Tests included
 
 tasks/tests.py contains at least 3 test cases:
