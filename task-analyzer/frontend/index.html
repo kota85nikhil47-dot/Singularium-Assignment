@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Task Analyzer — Demo</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Smart Task Analyzer — Demo</h1>
+
+    <section>
+      <h2>Input Tasks</h2>
+      <textarea id="tasksInput" rows="10" placeholder='Paste JSON array of tasks here. Example:
+[
+  {"id":"1","title":"Fix login","due_date":"2025-11-30","estimated_hours":3,"importance":8,"dependencies":[]}
+]'></textarea>
+
+      <div class="controls">
+        <button id="analyzeBtn">Analyze Tasks</button>
+        <select id="strategy">
+          <option value="smart">Smart Balance</option>
+          <option value="fastest">Fastest Wins</option>
+          <option value="highimpact">High Impact</option>
+          <option value="deadline">Deadline Driven</option>
+        </select>
+        <button id="suggestBtn">Suggest Top 3</button>
+      </div>
+      <div id="error" class="error" role="alert"></div>
+    </section>
+
+    <section>
+      <h2>Results</h2>
+      <div id="results"></div>
+    </section>
+  </main>
+
+<script src="script.js"></script>
+</body>
+</html>
